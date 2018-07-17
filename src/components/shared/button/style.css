@@ -12,6 +12,12 @@
   transition: background-color .3s ease-in;
 }
 
+svg {
+  vertical-align: middle;
+  fill: #fff;
+  margin-right: 5px;
+}
+
 .btn:hover {
   background-color: var(--primary-dark-color);
   cursor: pointer;
