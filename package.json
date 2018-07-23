@@ -1,0 +1,19 @@
+{
+  "name": "tamagotchi",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craz3r/Tamagotchi.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "start": "cd server && npm run dev"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3"
+  }
+}
