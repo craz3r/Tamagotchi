@@ -1,9 +1,13 @@
 # Tamagotchi game
 
-**npm install**
+**From the root of the application:**
 
-**To start server**
-From the root of the application enter:
-- npm start
+Start server separately:
+- npm run server
 
-Go to the https://localhost:3000, enjoy
+Start client separately:
+- npm run client
+
+**Start app in dev mode:**
+
+- npm run dev
