@@ -1,6 +1,6 @@
 import React from 'react';
 import { uniqueId } from 'lodash';
-import Button from '../shared/button';
+import Button from '../shared/button/commonButton';
 import { IconRetry } from '../shared/icons'
 import './style.css';
 
