@@ -3,16 +3,23 @@ import Spinner from 'react-svg-spinner';
 import { withRouter } from 'react-router-dom';
 import './style.css';
 
-export default ({ loading = false, text, icon = null, route }) => {
+export default ({ loading = false, text, icon = null, route, handleClick }) => {
   return (
-    <Button loading={loading} text={text} icon={icon} route={route}/>
+    <Button loading={loading} text={text} icon={icon} route={route} handleClick={handleClick} />
   )
 }
 
-const Button = withRouter(({ history, loading, text, icon, route  }) => (
-  <button className='btn' onClick={() => { history.push(route) }} disabled={ loading }>
-  { loading ? <Spinner />  : null }
-  { icon }
-  { text }
+const Button = withRouter(({ history, loading, text, icon, route, handleClick }) => (
+  <button className='btn'
+    onClick={() => {
+      if (handleClick) {
+        handleClick();
+      }
+      history.push(route)
+    }} 
+    disabled={loading}>
+    {loading ? <Spinner /> : null}
+    {icon}
+    {text}
   </button>
 ));
