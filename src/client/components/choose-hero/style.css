@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  width: 275px;
+}
+
+.list li:not(:last-child) {
+  margin-right: 75px;
+}
