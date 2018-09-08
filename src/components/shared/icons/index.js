@@ -2,7 +2,7 @@ import React from 'react';
 
 export const IconUndo = (props) => {
   return (
-    <svg className="icon undo" xmlns="http://www.w3.org/2000/svg" fill={props.color} width='22' height='22' viewBox="0 0 22 32" aria-labelledby="undo">
+    <svg className="icon undo" xmlns="http://www.w3.org/2000/svg" fill={props.fill} width='22' height='22' viewBox="0 0 22 32" aria-labelledby="undo">
      <title id="title">Undo Icon</title>
      <g>
        <path d="M10.385,1.499C10.096,1.378,9.76,1.446,9.537,1.667L0.228,8.98c-0.304,0.302-0.304,0.797,0,1.1 l9.309,7.278c0.148,0.15,0.348,0.229,0.549,0.229c0.102,0,0.203-0.021,0.299-0.059c0.291-0.121,0.465-0.404,0.465-0.719V12.45    c9.955,0,14.309,2.808,13.646,11.751C28.713,9.893,20.619,6.659,10.85,6.659V2.217C10.849,1.902,10.676,1.619,10.385,1.499z"/>
@@ -13,7 +13,7 @@ export const IconUndo = (props) => {
 
 export const IconRetry = (props) => {
   return (
-    <svg className="icon retry" xmlns="http://www.w3.org/2000/svg" fill={props.color} width='22' height='22' viewBox="0 0 22 32" aria-labelledby="retry">
+    <svg className="icon retry" xmlns="http://www.w3.org/2000/svg" fill={props.fill} width='22' height='22' viewBox="0 0 22 32" aria-labelledby="retry">
      <title id="title">Retry Icon</title>
      <g>
        <path d="M 15.324219 4.445313 C 13.496094 3.640625 11.433594 3.515625 9.515625 4.121094 C 5.871094 5.269531 3.507813 8.726563 3.753906 12.53125 L 1.265625 12.695313 C 0.945313 7.738281 4.027344 3.238281 8.765625 1.742188 C 11.539063 0.867188 14.546875 1.171875 17.097656 2.550781 L 19.484375 0 L 20.121094 7.074219 L 12.628906 7.324219 Z M 15.230469 22.257813 C 14.179688 22.585938 13.089844 22.753906 12.007813 22.753906 C 10.242188 22.753906 8.488281 22.296875 6.90625 21.445313 L 4.515625 24 L 3.882813 16.925781 L 11.371094 16.675781 L 8.679688 19.554688 C 10.5 20.355469 12.5625 20.484375 14.480469 19.878906 C 18.125 18.726563 20.492188 15.265625 20.246094 11.46875 L 22.730469 11.304688 C 23.058594 16.253906 19.972656 20.757813 15.230469 22.257813 Z "/>

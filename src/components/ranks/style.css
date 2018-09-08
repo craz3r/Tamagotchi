@@ -9,7 +9,8 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   padding: 20px;
 }
 
@@ -27,5 +28,5 @@ tbody td {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #F8F7FA;
+  background-color: #f8f7fa;
 }
