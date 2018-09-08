@@ -23,26 +23,22 @@ export default class ChooseHero extends React.Component {
           avatar: 'http://via.placeholder.com/100x100',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
         },
-      ]
-    }
+      ],
+    };
   }
 
   render() {
     return (
       <div className='container'>
         <h1 className='title'>
-          <IconUndo color='#000' />
+          <IconUndo fill='#000' />
           &nbsp;
           Choose your hero
         </h1>
         <ul className='list'>
-          {
-            this.state.entities.map((e, idx) => {
-              return <li key={idx}><HeroCard hero={e}/></li>
-            })
-          }
+          {this.state.entities.map((e, idx) => <li key={idx}><HeroCard hero={e}/></li>)}
         </ul>
       </div>
-    )
+    );
   }
 }
