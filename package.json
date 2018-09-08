@@ -1,7 +1,13 @@
 {
   "name": "tamagotchi",
   "version": "1.0.0",
+  "main": "src/server/index.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craz3r/Tamagotchi.git"
+  },
+  "license": "ISC",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -31,6 +37,8 @@
     "jest": "20.0.4",
     "lint-staged": "^7.2.2",
     "lodash": "^4.17.10",
+    "mongoose": "^5.2.13",
+    "nodemon": "^1.18.3",
     "node-sass-chokidar": "^1.3.3",
     "npm-run-all": "^4.1.3",
     "object-assign": "4.1.1",
@@ -60,6 +68,9 @@
     ]
   },
   "scripts": {
+    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "server": "nodemon src/server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "precommit": "lint-staged",
     "start-js": "node scripts/start.js",
     "build-js": "node scripts/build.js",
