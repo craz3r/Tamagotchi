@@ -1,28 +1,34 @@
 import React from 'react';
-import RouteButton from '../shared/button/routeButton';
-import './style.css';
+import { Field, reduxForm } from 'redux-form';
+import Button from '../shared/button';
+import styles from './style.css';
 
-export default class Signin extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-    }
-  }
+class Signin extends React.Component {
+  enterName = values => {
+    this.props.enterName(values);
+    this.props.history.push('/choose');
+  };
 
-  handleUsernameChange = (e) => {
-    this.setState({
-      name: e.target.value,
-    })
-  }
-
-  render () {
+  render() {
     return (
-      <div className='container'>
-        <h1 className='title'>Please, enter your name</h1>
-        <input type='text' id='enterName' className='enter-name' placeholder='Your name' value={this.state.name} onChange={this.handleUsernameChange} />
-        <RouteButton text='Go!' route='/choose' />
+      <div className="container">
+        <h1 className="title">Please, enter your name</h1>
+        <form onSubmit={this.props.handleSubmit(this.enterName)}>
+          <Field
+            component="input"
+            type="text"
+            name="currentUserName"
+            id="name"
+            className={styles.enterName}
+            placeholder="Your name"
+          />
+          <Button type="submit" label="Go!" className="block" />
+        </form>
       </div>
-    )
+    );
   }
 }
+
+export default reduxForm({
+  form: 'signin'
+})(Signin);

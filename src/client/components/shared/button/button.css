@@ -19,7 +19,6 @@
 }
 
 .buttonPrimary {
-  composes: button;
   background-color: var(--primary-color);
 }
 

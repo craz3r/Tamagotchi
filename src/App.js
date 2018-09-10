@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import SigninContainer from './containers/signin';
-import ChooseHero from './components/choose-hero';
-import Game from './components/game';
-import Ranks from './components/ranks';
+import SigninContainer from './client/containers/signin';
+import ChooseHero from './client/components/choose-hero';
+import Game from './client/components/game';
+import Ranks from './client/components/ranks';
 import './App.css';
 
 class App extends Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import RouteButton from '../../shared/button/routeButton';
+import Button from '../../shared/button';
 import './style.css';
 
 export default class HeroCard extends React.Component {
@@ -21,7 +21,7 @@ export default class HeroCard extends React.Component {
           {description}
         </main>
         <footer className='actions'>
-          <RouteButton text='Choose' route='/game' />
+          <Button text='Choose' onClick={this.handleClick} />
         </footer>
       </article>
     )
