@@ -1,11 +1,10 @@
-start CLIENT separately:
+start CLIENT separately: 
+**npm run client**
 
-**npm run client
 
-start SERVER separately:
+start SERVER separately: 
+**npm run server**
 
-**npm run server
 
-start both client and server together:
-
-**npm run dev
+start both client and server together: 
+**npm run dev**
